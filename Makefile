@@ -8,7 +8,7 @@ connections: main.o libclassmat.a
 	$(CC) $(FLAGS) -o connections main.o libclassmat.a
 matrix: libclassmat.a
 libclassmat.a: my_mat.o
-	$(AR) -rcs -o libclassmat.a my_mat.o -lm
+	$(AR) -rcs -o libclassmat.a my_mat.o
 
 my_mat.o: my_mat.c my_mat.h
 	$(CC) $(FLAGS) -c my_mat.c
