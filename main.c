@@ -26,9 +26,10 @@ int main()
         }
         else if (temp == 'C')
         {
-            printf("%d\n",shortestPath(mat));
+            int ans = shortestPath(mat);
+            printf("%d\n",ans);
         } 
     } while (temp != 'D');
 
-    return 1;
+    return 0;
 }

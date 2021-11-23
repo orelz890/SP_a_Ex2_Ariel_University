@@ -43,7 +43,7 @@ int accurateMat(int mat[10][10])
         // }
         // printf("\n");   
     }
-    return 1;
+    return 0;
 }
 
 int hasPath(int mat[10][10])
