@@ -32,16 +32,7 @@ int accurateMat(int mat[10][10])
                     mat[i][j] = (ij <= throwK)? mat[i][j] : (mat[i][k] + mat[k][j]);
                 }
             }
-        }
-        // for (int z = 0; z < 10; z++)
-        // {
-        //     for (int p = 0; p < 10; p++)
-        //     {
-        //         printf("%d ",mat[z][p]);
-        //     }
-        //     printf("\n");
-        // }
-        // printf("\n");   
+        }   
     }
     return 0;
 }
