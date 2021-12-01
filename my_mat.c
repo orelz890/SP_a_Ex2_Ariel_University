@@ -25,9 +25,9 @@ int accurateMat(int mat[10][10])
             {
                 if (i != j)
                 {
-                    int ik = mat[i][k] == 0? INT_MAX - mat[k][j] : mat[i][k];
-                    int kj = mat[k][j] == 0? INT_MAX - ik : mat[k][j];
-                    int throwK = (ik + kj);
+                    int ik = mat[i][k] == 0? INT_MAX : mat[i][k];
+                    int kj = mat[k][j] == 0? INT_MAX: mat[k][j];
+                    int throwK = ((ik==INT_MAX) || (kj == INT_MAX))? INT_MAX :(ik + kj);
                     int ij = mat[i][j] == 0? INT_MAX : mat[i][j]; 
                     mat[i][j] = (ij <= throwK)? mat[i][j] : (mat[i][k] + mat[k][j]);
                 }
